@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ProjectKartel</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- code mirror -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
+ 
+  </head>
+  <body onload="inicio()">
+    <div class="container">
+      <h1>Project Kartel</h1>
+      <p>
+        Este proyecto fue creado como peticion del modulo Info2A de la
+        Universidad de Bourgogna para poner en practica los conocimientos aprendidos 
+        en programacion orientada a objetos. 
+      </p>
+
+      <h2>Objetivo Principal</h2>
+      <p>Modelizar el juego de mesa Kartel para PC bajo Java</p>
+
+      <h2>Objetivos Específicos</h2>
+      <ul>
+        <ol>Crear una estructura de clases que permitan modelizar el proyecto</ol>
+        <ol>Utilizar java y la programación orientada a objetos (POO) para crear el juego</ol>
+        <ol>Crear una inteligencia artificial para el juego</ol>
+      </ul>
+
+      <h2>Recursos usados</h2>
+      <ul>
+        <ol>Lenguaje de programación: JAVA, versión 1.8.0_241</ol>
+        <ol>IDE de desarrollo: NET BEANS 8.2</ol>
+      </ul>
+		  <h2>Estructura del proyecto</h2>
+      <p>
+        El proyecto cartel cuenta actualmente con 16 clases públicas,
+        entre ellas 2 clases abstractas y una clase principal (Partie)
+        que contiene el método main. también cuenta con 2 interfaces (Showable, Reutilisable).
+        El esquema grafico UML de relaciones y herencias de clases e interfaces
+        se puede visualizar a continuacion
+      </p>
+      <h2>Diagrama UML Project Kartel</h2>
+      <!-- <embed src="./../documentation/KartelUML.pdf" type="application/pdf" width="100%" height="500px" /> -->
+
+      <h2>Especificación detallada del los archivos del proyecto</h2>
+      
+      <h2>Lista </h2>
+      <ul>
+        <ol>Crear una estructura de clases que permitan modelizar el proyecto</ol>
+        <ol>Utilizar java y la programación orientada a objetos (POO) para crear el juego</ol>
+        <ol>Crear una inteligencia artificial para el juego</ol>
+      </ul>
+      <div id="monokai">
+
+      </div>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+    <!-- code mirror -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/javascript/javascript.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.42.2/mode/clike/clike.min.js"></script>
+
+    <script>
+     function inicio() {
+        // console.log(document.querySelector('#monokai'));
+        console.log("HOlas");
+        CodeMirror(document.querySelector('#monokai'), {
+        lineNumbers: true,
+        tabSize: 2,
+        value: 'private String type;\nprivate Gang gang;',
+        mode: "text/x-java",
+        matchBrackets: true,
+        theme: 'monokai'
+      });
+      }
+      </script>
+  </body>
+</html>

@@ -14,7 +14,7 @@ $(document).ready(function() {
         if(tipo != 'class')
         nom = nom.substring(1);
 
-        let reference =`../code/api/kartel/${nom}.html`;
+        let reference =`resources/api/kartel/${nom}.html`;
         lista.append(`<a href = '${reference}' ><li class='list-group-item d-flex justify-content-between align-items-center'>${nom}
         <span class='badge badge-primary badge-pill'>${tipo}</span></li></a>`);
         
